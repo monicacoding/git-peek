@@ -2,6 +2,8 @@
 
 GitPeek is a modern, responsive web application for quickly visualizing GitHub user profiles and repositories. Enter any GitHub username to instantly view their profile details, key statistics, and latest repositories in a beautiful, user-friendly interface.
 
+![image](https://github.com/user-attachments/assets/b9e6fd6e-7a8b-4455-bebb-5876154a5314)
+
 ## Features
 
 - **Instant GitHub User Search:** Enter a username to fetch and display their public profile and repositories.
