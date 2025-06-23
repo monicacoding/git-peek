@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitPeek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <i class="fa-brands fa-github-alt"></i>GitPeek
+            </h1>
+            <p>Search for a GitHub user to see their profile and repositories.</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Enter a GitHub username..." autocomplete="off">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div id="profile-container" class="hidden">
+            <div class="profile-header">
+                <img src="" alt="Profile avatar." id="avatar">
+                <div class="profile-info">
+                    <h2 id="name"></h2>
+                    <p id="username"></p>
+                    <p id="bio"></p>
+                    <div class="location-date">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span id="location">Not Specified</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            Joined <span id="joined-date"></span>
+                        </div>
+                        <div class="info-item" id="blog-container">
+                            <i class="fa-solid fa-link"></i>
+                            <a id="blog" target="_blank">No Website Found</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fa-solid fa-users"></i>
+                        <span id="followers"></span>
+                        <span class="stat-label">followers</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fa-solid fa-user-friends"></i>
+                        <span id="following"></span>
+                        <span class="stat-label">following</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <span id="repos"></span>
+                        <span class="stat-label">repositories</span>
+                    </div>
+                </div>
+                <a id="profile-link" target="_blank" class="btn">View Profile</a>
+            </div>
+            <div class="repos-section">
+                <h3>Latest Repositories</h3>
+                <div id="repos-container" class="repos-container"></div>
+                <div class="loading-repos"></div>
+            </div>
+        </div>
+
+        <div id="error-container" class="hidden">
+            <p>No user found. Please try another username.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
