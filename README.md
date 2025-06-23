@@ -14,7 +14,8 @@ GitPeek is a modern, responsive web application for quickly visualizing GitHub u
 
 ## Demo
 
-![GitPeek Screenshot](screenshot.png)
+To use the application, simply visit the deployed site:
+[https://text-to-speech-monicacoding.vercel.app/](https://git-peek-monicacoding.vercel.app/)
 
 ## Usage
 
